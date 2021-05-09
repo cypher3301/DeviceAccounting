@@ -1,0 +1,65 @@
+/* line 1, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+body {
+  height: 100%; }
+
+/* line 5, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+.wrapper {
+  height: 100%; }
+  /* line 7, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+  .wrapper header.header {
+    position: static;
+    min-height: 80px;
+    background: #dddddd; }
+    /* line 11, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+    .wrapper header.header .logotype {
+      width: 50px;
+      background: #999999; }
+  /* line 19, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+  .wrapper main.main {
+    min-height: 100%;
+    padding-bottom: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    /* line 25, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+    .wrapper main.main section {
+      width: 20%; }
+    /* line 28, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+    .wrapper main.main section.table {
+      overflow-y: scroll;
+      padding: 20px;
+      width: 100%;
+      max-height: 70%; }
+    /* line 36, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+    .wrapper main.main aside.info {
+      width: 20%;
+      height: 100%;
+      background: #5264AE; }
+  /* line 42, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+  .wrapper footer.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -160px;
+    width: 100%; }
+    /* line 48, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+    .wrapper footer.footer .save {
+      background: white;
+      position: fixed;
+      bottom: 0px;
+      width: 100%; }
+      /* line 54, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/style.scss */
+      .wrapper footer.footer .save form.save__item {
+        text-align: center; }
+
+
+
+/*# sourceMappingURL=style.css.map */

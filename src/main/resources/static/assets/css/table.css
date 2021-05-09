@@ -1,0 +1,19 @@
+/* line 1, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/table.scss */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+
+/* line 7, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/table.scss */
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px; }
+
+/* line 13, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/scss/table.scss */
+tr:nth-child(even) {
+  background-color: #dddddd; }
+
+
+
+/*# sourceMappingURL=table.css.map */

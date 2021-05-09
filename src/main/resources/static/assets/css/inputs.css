@@ -1,0 +1,86 @@
+/* line 75, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* basic stylings ------------------------------------------ */
+/* line 79, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+.container {
+  font-family: Open Sans Condensed;
+  margin: 0 auto;
+  background: #FFF;
+  padding: 10px 50px; }
+
+/* form starting stylings ------------------------------- */
+/* line 97, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+.group {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block; }
+
+/* line 103, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+input {
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #ccc; }
+  /* line 110, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+  input:focus {
+    outline: none; }
+
+/* LABEL ======================================= */
+/* line 114, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+label {
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+
+/* active state */
+/* line 127, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+input:focus ~ label, input:valid ~ label {
+  top: -15px;
+  font-size: 14px;
+  color: #5264AE; }
+
+/* BOTTOM BARS ================================= */
+/* line 134, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+.bar {
+  position: relative;
+  width: 320px; }
+  /* line 138, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+  .bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264AE;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  /* line 149, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+  .bar:before {
+    left: 50%; }
+  /* line 151, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+  .bar:after {
+    right: 50%; }
+
+/* active state */
+/* line 156, D:/cloud/google/Projects/git/java/spring_crud_diplom/src/main/resources/static/assets/sass/inputs.sass */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%; }
+
+
+
+/*# sourceMappingURL=inputs.css.map */

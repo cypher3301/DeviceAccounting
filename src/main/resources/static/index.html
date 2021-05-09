@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="UA">
+<head>
+    <title>UKRINE</title>
+
+
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/table.css"/>
+    <link rel="stylesheet" href="assets/css/inputs.css">
+
+    <script type="text/javascript" src="assets/scripts/baseAction.js">loadItems()</script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="logotype">
+            <img src="" alt=""/>
+            <span>Logo</span>
+        </div>
+    </header>
+    <main class="main">
+        <section></section>
+        <section class="table">
+            <table id="itemsList" class="table__list">
+
+            </table>
+
+        </section>
+        <aside class="info"></aside>
+    </main>
+    <footer class="footer">
+        <div class="save">
+            <form class="save__item" action="#">
+                <div class="group">
+                    <input type="text" id="item_gosNumber" placeholder="" required/>
+                    <span class="bar"></span>
+                    <label>Number</label>
+                </div>
+                <div class="group">
+                    <input type="text" id="item_auditory" placeholder="" required/>
+                    <span class="bar"></span>
+                    <label>Auditory</label>
+                </div>
+                <div class="group">
+                    <input type="text" id="item_name" placeholder="" required/>
+                    <span class="bar"></span>
+                    <label>Name</label>
+                </div>
+                <div class="group">
+                    <input type="text" id="item_type" placeholder="" required/>
+                    <span class="bar"></span>
+                    <label>Type</label>
+                </div>
+                <div class="group">
+                    <input type="text" id="item_simpleDescription" placeholder="" required/>
+                    <span class="bar"></span>
+                    <label>Description</label>
+                </div>
+                <button onclick="addItem()">Add</button>
+            </form>
+        </div>
+
+        <div class="about"></div>
+    </footer>
+</div>
+
+
+<!--<input id="search_field">-->
+<!--<button onclick="searchByLogin()">Search by Login</button>-->
+<script>
+    // function searchByLogin() {
+    //     var login = document.getElementById("search_field").value;
+    //     var xhttp = new XMLHttpRequest();
+    //     xhttp.onreadystatechange = function () {
+    //         if (this.readyState == 4 && this.status == 200) {
+    //             var user = JSON.parse(this.responseText);
+    //             var html = '<tr>\n' +
+    //                 '        <th>User id</th>\n' +
+    //                 '        <th>User name</th>\n' +
+    //                 '        <th>User login</th>\n' +
+    //                 '        <th>User email</th>\n' +
+    //                 '        <th>Delete</th>\n' +
+    //                 '    </tr>';
+    //             html = html + '<tr><td>' + user.id + '</td>\n' +
+    //                 '        <td>' + user.name + '</td>\n' +
+    //                 '        <td>' + user.login + '</td>\n' +
+    //                 '        <td>' + user.email + '</td>' +
+    //                 '        <td><button onclick="deleteUser(' + user.id + ')">Delete</button></td></tr>';
+    //             document.getElementById("usersList").innerHTML = html;
+    //         }
+    //     };
+    //     xhttp.open("GET", "http://localhost:8080/users/findByLogin?login=" + login, true);
+    //     xhttp.send();
+    // }
+    //
+    //
+    // function deleteUser(userId) {
+    //     var xhttp = new XMLHttpRequest();
+    //     xhttp.open("DELETE", "http://localhost:8080/users/delete/" + userId, true);
+    //     xhttp.send();
+    // }
+    //
+    // function createUser() {
+    //     var userName = document.getElementById("user_name").value;
+    //     var userLogin = document.getElementById("user_login").value;
+    //     var userEmail = document.getElementById("user_email").value;
+    //
+    //     var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+    //     xmlhttp.open("POST", "http://localhost:8080/users/save");
+    //     xmlhttp.setRequestHeader("Content-Type", "application/json");
+    //     xmlhttp.send(JSON.stringify({name: userName, login: userLogin, email: userEmail}));
+    //
+    //     loadUsers();
+    // }
+    //
+    // function loadUsers() {
+    //     var xhttp = new XMLHttpRequest();
+    //     xhttp.onreadystatechange = function () {
+    //         if (this.readyState == 4 && this.status == 200) {
+    //             var items = JSON.parse(this.responseText);
+    //             var html = '<tr>\n' +
+    //                 '        <th>User id</th>\n' +
+    //                 '        <th>User name</th>\n' +
+    //                 '        <th>User login</th>\n' +
+    //                 '        <th>User email</th>\n' +
+    //                 '        <th>Delete</th>\n' +
+    //                 '    </tr>';
+    //             for (var i = 0; i < items.length; i++) {
+    //                 var user = items[i];
+    //                 console.log(user);
+    //                 html = html + '<tr><td>' + user.id + '</td>\n' +
+    //                     '        <td>' + user. + '</td>\n' +
+    //                     '        <td>' + user.login + '</td>\n' +
+    //                     '        <td>' + user.email + '</td>' +
+    //                     '        <td><button onclick="deleteUser(' + user.id + ')">Delete</button></td></tr>';
+    //
+    //             }
+    //             document.getElementById("usersList").innerHTML = html;
+    //         }
+    //     };
+    //     xhttp.open("GET", "http://localhost:8080/users/findAll", true);
+    //     xhttp.send();
+    // }
+    loadItems();
+</script>
+</body>
+</html>
